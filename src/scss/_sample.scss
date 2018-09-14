@@ -1,0 +1,39 @@
+#wrap {
+  padding: 40px;
+}
+h1 {
+  margin-bottom: 40px;
+}
+$Base: cubic-bezier(0.23, 1, 0.32, 1);
+
+/* ==========================================================================
+   Sample
+  ========================================================================== */
+
+.js-split {
+  display: block;
+  overflow: hidden;
+  font-size: 30px;
+  font-weight: bold;
+  letter-spacing: 0.2em;
+  opacity: 0;
+
+  span {
+    display: inline-block;
+    transform: translateY(120%);
+    transition: .8s $Base;
+
+    @for $i from 1 through 30 {
+      &:nth-child(#{$i}) {
+        transition-delay: #{$i * 0.05}s;
+      }
+    }
+  }
+
+  &.show {
+    opacity: 1;
+    span {
+      transform: translateY(0);
+    }
+  }
+}

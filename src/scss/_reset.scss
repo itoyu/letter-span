@@ -1,0 +1,45 @@
+@charset 'UTF-8';
+
+*,
+h1,
+h2,
+h3,
+h4,
+p,
+ul,
+ol,
+li,
+form,
+dl,
+dt,
+dd,
+div,
+table,
+tr,
+th,
+td {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img,
+figure,
+iframe,
+object {
+  border: 0;
+  height: auto;
+  max-width: 100%;
+  vertical-align: top;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+}
+
+ul,
+ol,
+li {
+  list-style-type: none;
+}
